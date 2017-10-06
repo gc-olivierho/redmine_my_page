@@ -2,7 +2,7 @@
    if !query.nil?
 
     query_issues_count = query.issue_count
-    query_issue_count_by_group = query.issue_count_by_group
+    query_issue_count_by_group = query.result_count_by_group
     param_hash = query.project_id.nil? ? { :query_id => query_id } : { :project_id => query.project_id, :query_id => query_id }
 
     if query_limit.to_i > 0
